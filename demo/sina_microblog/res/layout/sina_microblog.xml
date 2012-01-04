@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:gravity="top">
+			<ImageView android:id="@+id/ivWrite" android:layout_width="70dp"
+				android:layout_height="60dp" android:src="@drawable/write" />
+
+			<TextView android:id="@+id/tvFunItemText"
+				android:layout_width="70dp" android:layout_height="wrap_content"
+				android:gravity="center" android:textColor="#FFF" android:text="写微博" />
+		</LinearLayout>
+		<Gallery android:id="@+id/gyFunction" android:layout_width="fill_parent"
+			android:layout_height="80dp" />
+	</LinearLayout>
+
+	<ListView android:id="@+id/lvMicroBlog" android:layout_width="fill_parent"
+		android:layout_height="fill_parent"  />
+	<ListView android:id="@+id/lvStrollMicroBlog" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:visibility="gone" />
+	<ListView android:id="@+id/lvMeMicroBlog" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:visibility="gone"  />
+	<ListView android:id="@+id/lvComments" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:visibility="gone"  />		
+</LinearLayout>     

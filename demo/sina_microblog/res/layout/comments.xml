@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="300dp"
+	android:layout_height="wrap_content" android:gravity="right">
+	<EditText android:id="@+id/etComment" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginTop="5dp"
+		android:lines="3" android:layout_marginLeft="4dp"
+		android:layout_marginRight="7dp" />
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="right">
+
+		<TextView android:id="@+id/tvRemainWordCount"
+			android:layout_width="160dp" android:layout_height="wrap_content"
+			android:text="可输入字数：140" android:layout_marginTop="6dp"  android:layout_marginLeft="6dp"/>
+
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:gravity="right">
+				<Button android:id="@+id/btnPostComment"  android:text="发布"
+		android:layout_marginRight="7dp" android:layout_width="@dimen/login_loginbutton_width"
+		android:layout_height="@dimen/login_loginbutton_height" />
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout> 

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:gravity="top">
+	<ImageView android:id="@+id/ivPhoto" android:layout_width="61dp"
+		android:layout_height="61dp" android:paddingLeft="5dp"
+		android:paddingTop="10dp" />
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:padding="5dp">
+		<TextView android:id="@+id/tvName" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:textSize="13sp" />
+		<TextView android:id="@+id/tvCreatedAt" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_toRightOf="@id/tvName"
+			android:gravity="right" android:textSize="13sp" />
+		<TextView android:id="@+id/tvCount" android:layout_width="wrap_content"
+			android:layout_height="0dp" android:layout_below="@id/tvCreatedAt"
+			android:textSize="13sp" android:textColor="#CC00FF"  />
+		<TextView android:id="@+id/tvText" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_below="@id/tvCount"
+			android:textSize="15sp" android:lines="2" android:autoLink="all"
+			android:linksClickable="false" />
+		<TextView android:id="@+id/tvRepostText" android:layout_width="fill_parent"
+			android:layout_height="0dp" android:layout_below="@id/tvText"
+			android:textSize="15sp"  android:autoLink="all"
+			android:linksClickable="false" />
+		<ImageView android:id="@+id/ivMicroBlogImage"
+			android:layout_width="wrap_content" android:layout_height="0dp"
+			 android:layout_below="@id/tvRepostText"
+			android:layout_marginTop="6dp" android:scaleType="center" />
+		
+	</RelativeLayout>
+</LinearLayout>

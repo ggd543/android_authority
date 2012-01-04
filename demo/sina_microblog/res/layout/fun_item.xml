@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="wrap_content"
+	android:layout_height="wrap_content" android:gravity="top">
+	<ImageView android:id="@+id/ivFunction" android:layout_width="70dp"
+		android:layout_height="60dp" />
+	<TextView android:id="@+id/tvFunItemText"
+		android:layout_width="70dp" android:layout_height="wrap_content"
+		android:gravity="center" android:textColor="#FFF"  />
+</LinearLayout>
